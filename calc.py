@@ -1,1 +1,15 @@
 print("Hello")
+print("Are you solving for leg or hypotenuse?")
+question1 = input()
+if question1 == "hypotenuse":
+    print("What is your first leg?") 
+    leg1 = int(input())
+    print("What is your second leg?")
+    leg2 = int(input())
+    print("The hypotenuse is " + str((((leg1**2) + (leg2**2)) ** (1/2))))
+else:
+    print("What is the hypotenuse?")
+    hypotenuse2 = int(input())
+    print("What is the first leg?")
+    leg3 = int(input())
+    print("The missing leg is " + str((((hypotenuse2**2) - (leg3**2))) ** (1/2)))
